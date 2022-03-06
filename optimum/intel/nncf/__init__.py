@@ -94,10 +94,10 @@ def patch(module, patch_file):
     replace_code_of_module(module, code)
 
 
-if version.parse(transformers.__version__) >= version.parse("4.11.0"):
-    patch(trainer, "trainer_4.11.0.patch")
-else:
-    patch(trainer, "trainer_4.9.1.patch")
-patch(training_args, "training_args.patch")
-patch(trainer_callback, "trainer_callback.patch")
-patch(modeling_utils, "modeling_utils.patch")
+# if version.parse(transformers.__version__) >= version.parse("4.11.0"):
+#     patch(trainer, "trainer_4.11.0.patch")
+# else:
+#     patch(trainer, "trainer_4.9.1.patch")
+# patch(training_args, "training_args.patch")
+# patch(trainer_callback, "trainer_callback.patch")
+# patch(modeling_utils, "modeling_utils.patch")
